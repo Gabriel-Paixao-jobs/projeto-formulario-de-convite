@@ -1,0 +1,22 @@
+:root {
+  --font-leckerli: 'Leckerli', sans-serif;
+  --Logo: 400 2.5rem var(--font-leckerli);
+
+  --font-baloo: 'Baloo 2', sans-serif;
+  --Heading-Md: 700 1.75rem var(--font-baloo);
+  --Heading-Sm: 700 1.125rem var(--font-baloo);
+
+  --font-open: 'Open Sans', sans-serif;
+  --Body-Md: 600 1rem var(--font-open);
+  --Body-Sm: 600 0.875rem var(--font-open);
+  --Body-Xs: 600 0.75rem var(--font-open);
+
+  --text-body: #C8CDD0;
+  --text-heading: #F9F9F9;
+
+  --danger: #FF5959;
+  --brand-light: #59B2FF;
+  --brand-mid: #3487CF;
+  --brand-dark: #1D6FB6;
+}
+
