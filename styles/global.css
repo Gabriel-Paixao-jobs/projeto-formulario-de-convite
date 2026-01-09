@@ -1,3 +1,9 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
 :root {
   --font-leckerli: 'Leckerli', sans-serif;
   --Logo: 400 2.5rem var(--font-leckerli);
@@ -18,5 +24,10 @@
   --brand-light: #59B2FF;
   --brand-mid: #3487CF;
   --brand-dark: #1D6FB6;
+
+  --shape-body: #212427;
 }
 
+body {
+  overflow: hidden;
+}
