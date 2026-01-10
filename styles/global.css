@@ -13,9 +13,9 @@
   --heading-sm: 700 1.125rem var(--font-baloo);
 
   --font-open: 'Open Sans', sans-serif;
-  --body-md: 600 1rem var(--font-open);
-  --body-sm: 600 0.875rem var(--font-open);
-  --body-xs: 600 0.75rem var(--font-open);
+  --body-md: 400 1rem var(--font-open);
+  --body-sm: 400 0.875rem var(--font-open);
+  --body-xs: 400 0.75rem var(--font-open);
 
   --text-body: #C8CDD0;
   --text-heading: #F9F9F9;
@@ -26,7 +26,10 @@
   --brand-dark: #1D6FB6;
 
   --shape-body: #212427;
-  zoom: 60%;
+  --input-stroke: #363B40;
+  --input-base: #1C1F21;
+  --input-placeholder: #869198;
+
 }
 
 body {

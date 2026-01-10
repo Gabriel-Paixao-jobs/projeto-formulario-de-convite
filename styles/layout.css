@@ -48,21 +48,9 @@ aside {
 
   & h1 {
     font: var(--heading-md);
+    color: var(--text-heading);
     margin-bottom: 2.6rem;
-  }
-
-  & .invite {
-    display: flex;
-    align-items: center;
-    gap: 0.75rem;
-    margin-bottom: 1.5rem;
-    
-  & h3 {
-    font: var(--heading-sm);
-  }
-  }
-
-  
+  }  
 
 }
 
