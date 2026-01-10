@@ -28,7 +28,7 @@
 
         <form>
           <fieldset class="invite-info">
-            <legend><img src="assets/icons/calendar.svg" alt="icone de calendario">sobre o evento
+            <legend><img src="assets/icons/calendar.svg" alt="icone de calendario">Sobre o evento
             </legend>
 
             <div class="input-wrapper">
@@ -36,24 +36,26 @@
               <input id="title" type="text" name="title" placeholder="Nome do evento">
             </div>
 
-            <div class="input-wrapper">
+            <div class="date-wrapper">
               <label for="initiation">Início</label>
               <input id="initiation" type="datetime-local" name="initiation" >
             </div>
 
-            <div class="input-wrapper">
+            <div class="date-wrapper">
               <label for="finish">Fim</label>
               <input id="finish" type="datetime-local" name="finish" >
             </div>
 
-            <div class="input-wrapper">
+            <div class="button-wrapper">
               <label for="kind">Tipo</label>
-              <input id="kind" type="button" name="kind" value="Presencial" >
-              <input id="kind" type="button" name="kind" value="Online" >
 
+              <div class="btn-wrapper">
+                <input class="kind-button presencial" type="button" name="kind" value="Presencial" >
+                <input class="kind-button online" type="button" name="kind" value="Online" >
+              </div>
             </div>
 
-            <div class="input-wrapper">
+            <div class="place-wrapper">
               <label for="place">Local</label>
               <input id="place" type="text" name="place" placeholder="Link ou endereço">
             </div>
