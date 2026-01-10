@@ -25,10 +25,46 @@
     <aside>
       <div class="aside-container"> 
         <h1>Crie seu convite</h1>
-        <div class="invite">
-         <img src="assets/icons/calendar.svg" alt="icone de calendario">
-         <h3>Sobre o evento</h3>
-        </div>
+
+        <form>
+          <fieldset class="invite-info">
+            <legend><img src="assets/icons/calendar.svg" alt="icone de calendario">sobre o evento
+            </legend>
+
+            <div class="input-wrapper">
+              <label for="title">Título</label>
+              <input id="title" type="text" name="title" placeholder="Nome do evento">
+            </div>
+
+            <div class="input-wrapper">
+              <label for="initiation">Início</label>
+              <input id="initiation" type="datetime-local" name="initiation" >
+            </div>
+
+            <div class="input-wrapper">
+              <label for="finish">Fim</label>
+              <input id="finish" type="datetime-local" name="finish" >
+            </div>
+
+            <div class="input-wrapper">
+              <label for="kind">Tipo</label>
+              <input id="kind" type="button" name="kind" value="Presencial" >
+              <input id="kind" type="button" name="kind" value="Online" >
+
+            </div>
+
+            <div class="input-wrapper">
+              <label for="place">Local</label>
+              <input id="place" type="text" name="place" placeholder="Link ou endereço">
+            </div>
+
+            <div class="textarea-wrapper">
+               <label for="description">Descrição</label>
+               <textarea name="description" id="description" cols="30" rows="10" placeholder="Escreva sobre os detalhes do evento"></textarea>
+            </div>
+
+          </fieldset>
+        </form>
       </div>
     </aside>
   </div>
