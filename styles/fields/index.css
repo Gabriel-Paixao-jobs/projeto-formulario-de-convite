@@ -88,8 +88,14 @@ input[type="datetime-local"] {
 }
 
 
+.customization {
+  & legend {
+  margin-bottom: 2rem;
+
+  }
+}
+
 .radio-wrapper {
-  
 
    & .custom-radio input[type="radio"] {
       position: absolute;
@@ -175,4 +181,20 @@ input[type="datetime-local"] {
     &  .cyan  {
         background-color: #59FFF9;
       }
+}
+
+
+.themeselection { 
+
+box-sizing: border-box;
+text-align: center;
+padding: 4px 4px 8px;
+gap: 8px;
+
+width: 134px;
+height: 103px;
+
+background: #2D3136;
+border-radius: 8px;
+
 }
