@@ -1,0 +1,39 @@
+.button-wrapper {
+    
+  & .btn-wrapper {  
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+
+      border: 1px solid var(--input-stroke);
+      border-radius: 8px; 
+  
+      background-color: var(--input-base);
+  }
+
+  & label {
+    grid-column: 1 / span 2;
+  }
+
+  & .presencial {
+    margin: 0.25rem;
+   
+    height: 3rem;
+    padding: 0.25rem;
+    border-radius: 4px;
+
+    color: var(--text-heading);
+    background: var(--input-stroke) url(../../assets/icons/building.svg) no-repeat  calc(100% - 6rem);
+
+  } 
+
+  & .online {
+    border: none;
+    background: url(../../assets/icons/video.svg) no-repeat calc(100% - 6rem);
+    outline: none;
+  }
+
+  input[type="button"] {
+ 
+  padding-left: 2rem;
+}
+}
