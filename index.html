@@ -70,6 +70,8 @@
           <fieldset class="customization">
             <legend><img src="assets/icons/paintbrush-vertical.svg" alt="ícone de um pincel">Personalização</legend>
 
+            <h3 class="paragrafos">Cor principal</h3>
+
              <div class="radio-wrapper">
               <label class="custom-radio">
                 <input type="radio" name="option" value="1">
@@ -128,12 +130,10 @@
           
             </div>
           </fieldset>
-          <div class="paragrafos">
-            <p>Tema do evento</p>
-          </div>
-          <fieldset class="theme-info">
-           
 
+            <h3 class="paragrafos">Tema do evento</h3>
+
+          <fieldset class="theme-info">
             <div class="themeselection ">
               <label>
                 <input type="radio" name="tema" value="aniversario">
@@ -223,14 +223,36 @@
               </div>
 
               <div class="themeselection">
-              <label>
-                 <input type="radio" name="tema" value="aniversario">
-                  <img src="assets/images/outro.png" alt="imagem de pessoas a festejar">
-                  Outro
-              </label>
+                <label>
+                  <input type="radio" name="tema" value="aniversario">
+                    <img src="assets/images/outro.png" alt="imagem de pessoas a festejar">
+                    Outro
+                </label>
               </div>
             </div>
+
+            <div class="upload">
+
+              <div class="switch-container">
+                <label for="toggle">Estilo</label>
+                <div class="switchtoggle">
+                  <input id="toggle" type="button" name="toggle">
+                  <span>Escuro</span>
+                </div>
+              </div>
+
+              <div class="btn">   
+                <label for="kind">Foto de capa</label>
+                <div class="btn-wrapper">
+                    <input id="kind" class="kind-button selection" type="button" name="kind"  value="Selecionar" >
+                    <span>Nenhum arquivo selecionado</span>
+                </div>
+              </div>
+            </div>
+
           </fieldset>
+
+
         </form>
       </div>
     </aside>

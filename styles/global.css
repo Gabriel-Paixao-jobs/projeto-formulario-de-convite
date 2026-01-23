@@ -44,6 +44,8 @@ img {
   height: auto;
 }
 
-.paragrafos {
+h3{
+  font: var(--body-sm);
   margin-bottom: 2rem;
+
 }
