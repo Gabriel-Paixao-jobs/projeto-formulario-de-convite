@@ -243,19 +243,21 @@
 
               <div class="btn">   
                 <label for="kind">Foto de capa</label>
-                <div class="btn-wrapper">
-                    <input id="kind" class="kind-button selection" type="button" name="kind"  value="Selecionar" >
-                    <span>Nenhum arquivo selecionado</span>
-                </div>
+                <div class="input-row">
+                <div  class="selection">
+                    <input id="kind" type="file" name="kind" >
+                    <p>Selecionar</p>
+                  </div>
+                  <span>Nenhum arquivo selecionado</span>
+                  </div>
               </div>
             </div>
 
           </fieldset>
 
-          <fieldset class="contact-info">
-            <div class="contacts">
-                <legend><img src="assets/icons/contact.svg" alt="ícone de contato">Dados para contato</legend>
-            </div>
+          <fieldset class="contact-info">           
+            <legend><img src="assets/icons/contact.svg" alt="ícone de contato">Dados para contato</legend>
+
             <div class="input-wrapper">
               <label for="name">Nome</label>
               <input id="name" type="text" name="name" placeholder="Nome completo">
@@ -268,13 +270,15 @@
 
             <div class="input-wrapper">
               <label for="cel">Telefone</label>
-              <input id="cel" type="number" name="cel" placeholder="(99) 99999-9999">
+              <input id="cel" type="tel" name="cel" placeholder="(99) 99999-9999">
             </div>
 
 
           </fieldset>
 
-
+          <div class="terms-wrapper input-wrapper checkbox-wrapper">
+            .checkbox-image
+          </div>
         </form>
       </div>
     </aside>
