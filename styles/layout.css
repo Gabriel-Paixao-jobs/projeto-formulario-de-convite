@@ -44,6 +44,7 @@ aside {
   
   & .aside-container {
     max-width: 35rem;
+    width: 100%;
   } 
 
   & h1 {
