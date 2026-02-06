@@ -1,39 +1,124 @@
-.button-wrapper {
-    
-  & .btn-wrapper {  
-      display: grid;
-      grid-template-columns: 1fr 1fr;
 
-      border: 1px solid var(--input-stroke);
-      border-radius: 8px; 
-  
-      background-color: var(--input-base);
-  }
-
-  & label {
-    grid-column: 1 / span 2;
-  }
-
-  & .presencial {
-    margin: 0.25rem;
-   
-    height: 3rem;
-    padding: 0.25rem;
-    border-radius: 4px;
-
-    color: var(--text-heading);
-    background: var(--input-stroke) url(../../assets/icons/building.svg) no-repeat  calc(100% - 6rem);
-
-  } 
-
-  & .online {
-    border: none;
-    background: url(../../assets/icons/video.svg) no-repeat calc(100% - 6rem);
-    outline: none;
-  }
-
-  input[type="button"] {
- 
-  padding-left: 2rem;
+ .campo-tipo {
+  display: flex;
+  flex-direction: column;
+  gap: 0.8rem;
+  /* padding-right: 22rem; */
 }
+
+.campo-tipo .linha {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.campo-tipo span {
+  white-space: nowrap;
+}
+
+
+/* button presencial e online */
+.button-wrapper {
+  display: flex;
+  justify-content: center; 
+  align-items: center;
+
+
+  width: 17rem;
+  height: 3rem;
+
+  background-color: var(--input-base);
+  border: 1px solid #363B40;
+  border-radius: .5rem;
+
+    & .btn-wrapper { 
+      display: flex;
+      width: 100%;
+
+  }
+
+  /* inputs escondidos */
+  .btn-wrapper input[type="radio"] {
+    display: none;
+  }
+     /* quando PRESENCIAL está selecionado */
+    .btn-wrapper input#presencial:checked + label.presencial .icon { 
+      content: url(../../assets/icons/building.svg); 
+    } 
+
+  /* quando PRESENCIAL está selecionado */
+  .btn-wrapper input#presencial:checked + label.presencial {
+    background-color: var(--input-stroke);
+    color: white;
+  }
+
+      /* quando ONLINE está selecionado */
+    .btn-wrapper input#online:checked + label.online .icon { 
+      content: url(../../assets/icons/video2.svg); 
+    } 
+
+    /* Estiliza o botão inteiro */ 
+    .btn-wrapper input#online:checked + label.online {
+       background: var(--input-stroke); color: white;
+     }
+}
+.btn {
+  flex: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: .5rem;
+  margin: 0 .15rem;
+  padding: .75rem;
+  border-radius: .25rem;
+  cursor: pointer;
+  background-color: var(--input-base);
+  color: var(--text-heading);
+  transition: 0.2s;
+}
+
+/* Quando selecionado → muda as cores */
+
+
+button {
+    all: unset;  
+    display: flex;
+    gap: .75rem;
+
+    border-radius: 0.5rem;
+    cursor: pointer;
+    color: var(--text-heading);
+
+  .input-row {
+  display: flex;
+  align-items: center;
+  gap: 1rem; 
+}
+}
+/* butão de selecionar */
+button.selection {
+    width: 7.5rem;
+    height: 1.2rem;
+  
+    padding: .75rem 1rem;
+    background: var(--input-stroke) no-repeat;
+
+    &:hover {
+      outline: 2px solid #4a90e2;
+    }
+    
+  } 
+/* button de gerar convite */
+button.btn-primary {
+    margin: 0 auto;
+    font-weight: 600;
+    padding: .75rem 1rem;
+    
+    background: var(--brand-dark) no-repeat;
+
+    &:hover,
+    &:focus {
+      background-color: var(--brand-mid);
+    }
+      
 }
