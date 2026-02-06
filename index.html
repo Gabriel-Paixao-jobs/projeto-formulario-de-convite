@@ -45,16 +45,23 @@
               <label for="finish">Fim</label>
               <input id="finish" type="datetime-local" name="finish" >
             </div>
-
+            <div class="campo-tipo">
+            <p>Tipo</p>
             <div class="button-wrapper">
-              <label for="kind">Tipo</label>
-
               <div class="btn-wrapper">
-                <input class="kind-button presencial" type="button" name="kind" value="Presencial" >
-                <input class="kind-button online" type="button" name="kind" value="Online" >
+
+                <input type="radio" id="presencial" name="tipo" checked>
+                <label for="presencial" class="btn presencial">
+                  <img class="icon" src="./assets/icons/building2.svg" alt=""> Presencial
+                </label>
+
+                <input type="radio" id="online" name="tipo">
+                <label for="online" class="btn online">
+                  <img class="icon" src="./assets/icons/video.svg" alt=""> Online
+                </label>
               </div>
             </div>
-
+            </div>
             <div class="place-wrapper">
               <label for="place">Local</label>
               <input id="place" type="text" name="place" placeholder="Link ou endereço">
@@ -241,18 +248,16 @@
                 </div>
               </div>
 
-              <div class="btn">   
-                <label for="kind">Foto de capa</label>
-                <div class="input-row">
-                <div  class="selection">
-                    <input id="kind" type="file" name="kind" >
-                    <p>Selecionar</p>
-                  </div>
+                <div class="campo-tipo">   
+                  <p>Foto de capa</p>
+                  <div class="linha">
+                  <button class="selection" type="file">
+                  <img src="./assets/icons/upload.svg" alt="icone de upload">Selecionar
+                  </button>      
                   <span>Nenhum arquivo selecionado</span>
                   </div>
-              </div>
+                </div>
             </div>
-
           </fieldset>
 
           <fieldset class="contact-info">           
@@ -295,14 +300,14 @@
               <label for="terms">Aceito receber atualizações e promoções por SMS</label>
             </div>
 
-             <div class="btn">   
-                <label for="kind"></label>
-                
-                <div  class="join">
-                    <input id="kind" type="button" name="kind" >
-                    <p>Gerar convite</p>
-                  </div>
-              </div>
+             
+               <div class="campo-tipo">
+                 <button class="btn-primary" type="button">
+                    <img src="./assets/icons/ticket.svg" alt="icone de ticket">
+                    Gerar convite
+                  </button>               
+                </div>
+            
           </div>
         </form>
       </div>
