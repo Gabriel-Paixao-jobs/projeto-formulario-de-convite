@@ -53,6 +53,13 @@ input[type="datetime-local"] {
   }
 }
 
+input {
+
+&:invalid {
+  border: 0.125rem solid var(--danger);
+}
+}
+
 .customization {
   margin-bottom: 2rem;
   & legend {
