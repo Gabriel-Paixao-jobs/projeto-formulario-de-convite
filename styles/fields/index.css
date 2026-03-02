@@ -30,6 +30,10 @@ input, textarea {
   font: var(--body-md);
   color: var(--input-placeholder);
 
+  &:not(:focus):valid + .error {
+    display: none;
+  }
+
 }
 
 label {
@@ -42,6 +46,15 @@ label {
 input:focus,
 textarea:focus {
   outline: .25rem solid var(--brand-light);
+
+  &:required:user-invalid:focus,
+  &:required:user-invalid:focus {
+  outline: .125rem solid var(--danger);
+}
+}
+
+.input-wrapper:has([disabled]) {
+  opacity: .5;
 }
 
 input[type="datetime-local"] {
@@ -53,11 +66,12 @@ input[type="datetime-local"] {
   }
 }
 
-input {
-
-&:invalid {
-  border: 0.125rem solid var(--danger);
-}
+.error{
+  display: flex;
+  align-items: center;
+  margin-top: .5rem;
+  color: var(--danger);
+  gap: .5rem;
 }
 
 .customization {
